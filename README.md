@@ -18,12 +18,10 @@
 |name|stirng|null:false|
 |group_id|null:false, foreign_key:  true|
 
-
-- デフォルト + nameカラム + group_idカラム
-
 ### Association
 - has_one :group
 - has_many :messages
+- has_and_belongs_to_many :group
 
 
 ## groupテーブル
@@ -34,7 +32,6 @@
 |date|integer|null:false|
 
 ### Association
-- has_one :user
-- has_many :group
-
+- has_and_belongs_to_many :user
+- has_many_messages
 
