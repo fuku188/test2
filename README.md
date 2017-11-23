@@ -13,6 +13,12 @@
 
 ## usersテーブル
 
+|Column|Type|Option|
+|------|----|------|
+|name|stirng|null:false|
+|group_id|null:false, foreign_key:  true|
+
+
 - デフォルト + nameカラム + group_idカラム
 
 ###Association
@@ -24,7 +30,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|integer|null:false, foreign_key: true|
 |user_id|integer|null:false, foreign_key: true|
 |date|integer|null:false|
 
