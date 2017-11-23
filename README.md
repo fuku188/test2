@@ -7,7 +7,7 @@
 |group_id|integer|null:false, foreign_key: ture|
 |user_id|integer|null:false, foreign_key: true|
 
-###Association
+### Association
 - belongs_to :group
 - belongs_to :user
 
@@ -21,7 +21,7 @@
 
 - デフォルト + nameカラム + group_idカラム
 
-###Association
+### Association
 - has_one :group
 - has_many :messages
 
@@ -33,7 +33,7 @@
 |user_id|integer|null:false, foreign_key: true|
 |date|integer|null:false|
 
-###Association
+### Association
 - has_one :user
 - has_many :group
 
