@@ -17,7 +17,7 @@
 |Column|Type|Option|
 |------|----|------|
 |group_id|integer|null:false, foreign_key|
-|user_id|null:false, foreign_key:  true|
+|user_id|integer|null:false, foreign_key:  true|
 
 ##Asociation
 - belongs_to :user
@@ -29,8 +29,8 @@
 |Column|Type|Option|
 |------|----|------|
 |name|stirng|null:false|
-|group_id|null:false, foreign_key:  true|
-|member_id|null:false, foreign_key: true|
+|group_id|integer|null:false, foreign_key:  true|
+|member_id|integer|null:false, foreign_key: true|
 
 ### Association
 - has_many :messages
@@ -43,7 +43,7 @@
 |------|----|-------|
 |user_id|integer|null:false, foreign_key: true|
 |date|integer|null:false|
-|member_id|null:false, foreign_key: true|
+|member_id|integer|null:false, foreign_key: true|
 
 ### Association
 - has_many :messages
